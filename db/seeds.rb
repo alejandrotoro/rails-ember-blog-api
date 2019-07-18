@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+3.times do |n|
+  Article.create(title: "Book-#{n}", isbn: Random.rand(8888), price:  Random.rand(100), author: "Clement-#{n}")
+end
